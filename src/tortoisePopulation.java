@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class tortoisePopulation extends Animal {
 
+    public tortoisePopulation(String area) {
+        this.area = area;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
     private String area;
 
 
@@ -14,8 +26,6 @@ public class tortoisePopulation extends Animal {
         while (dataScanner.hasNext()) {
             String area = dataScanner.next();
 
-            Long populationSize = dataScanner.nextLong();
-            Integer populationChange = dataScanner.nextInt();
 
 
         }
