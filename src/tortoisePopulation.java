@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class tortoisePopulation extends Animal {
     private long populationSize1;
-
     private long populationSize2;
     private long populationSize3;
     private long populationSize4;
