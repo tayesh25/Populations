@@ -1,6 +1,6 @@
 import java.io.File;
 import java.util.Scanner;
-// poo poo pee pee
+
 public class humanPopulation extends Animal {
     private int percentChange;
 

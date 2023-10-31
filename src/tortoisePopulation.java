@@ -1,8 +1,9 @@
 import java.io.File;
 import java.util.Scanner;
-// pee pee
 
-public class tortoisePopulation extends Animal {
+
+public class tortoisePopulation extends Animal  {
+
     private long populationSize1;
     private long populationSize2;
     private long populationSize3;
@@ -14,31 +15,90 @@ public class tortoisePopulation extends Animal {
     private long populationSize9;
 
 
-
-    tortoisePopulation(long populationSize) {
-        this.area = area;
-        super.populationSize = populationSize;
-        this.percentChange = percentChange;
+    public tortoisePopulation(long populationSize1, long populationSize2, long populationSize3, long populationSize4, long populationSize5, long populationSize6, long populationSize7, long populationSize8, long populationSize9) {
+        this.populationSize1 = populationSize1;
+        this.populationSize2 = populationSize2;
+        this.populationSize3 = populationSize3;
+        this.populationSize4 = populationSize4;
+        this.populationSize5 = populationSize5;
+        this.populationSize6 = populationSize6;
+        this.populationSize7 = populationSize7;
+        this.populationSize8 = populationSize8;
+        this.populationSize9 = populationSize9;
     }
 
-
-
-    public String getArea() {
-        return area;
+    public long getPopulationSize1() {
+        return populationSize1;
     }
 
-    public void setArea(String area) {
-        this.area = area;
+    public void setPopulationSize1(long populationSize1) {
+        this.populationSize1 = populationSize1;
     }
 
-    public String toString() {
-        return
-                "Area:'" + area + '\'' +
-
-                        ", PopulationSize: " + populationSize +
-                        ", PercentChange: " + percentChange +
-                        ' ';
+    public long getPopulationSize2() {
+        return populationSize2;
     }
+
+    public void setPopulationSize2(long populationSize2) {
+        this.populationSize2 = populationSize2;
+    }
+
+    public long getPopulationSize3() {
+        return populationSize3;
+    }
+
+    public void setPopulationSize3(long populationSize3) {
+        this.populationSize3 = populationSize3;
+    }
+
+    public long getPopulationSize4() {
+        return populationSize4;
+    }
+
+    public void setPopulationSize4(long populationSize4) {
+        this.populationSize4 = populationSize4;
+    }
+
+    public long getPopulationSize5() {
+        return populationSize5;
+    }
+
+    public void setPopulationSize5(long populationSize5) {
+        this.populationSize5 = populationSize5;
+    }
+
+    public long getPopulationSize6() {
+        return populationSize6;
+    }
+
+    public void setPopulationSize6(long populationSize6) {
+        this.populationSize6 = populationSize6;
+    }
+
+    public long getPopulationSize7() {
+        return populationSize7;
+    }
+
+    public void setPopulationSize7(long populationSize7) {
+        this.populationSize7 = populationSize7;
+    }
+
+    public long getPopulationSize8() {
+        return populationSize8;
+    }
+
+    public void setPopulationSize8(long populationSize8) {
+        this.populationSize8 = populationSize8;
+    }
+
+    public long getPopulationSize9() {
+        return populationSize9;
+    }
+
+    public void setPopulationSize9(long populationSize9) {
+        this.populationSize9 = populationSize9;
+    }
+
     public static void readData() throws Exception {
         File dataFile = new File("src/tortoisePopulationDATA");
         Scanner dataScanner = new Scanner(dataFile);
@@ -61,11 +121,31 @@ public class tortoisePopulation extends Animal {
         long year9 = titleScanner.nextLong();
 
         while (dataScanner.hasNext()) {
+            dataScanner.useDelimiter(":");
             //Colorado Desert:13,530:3,319:3,984:2,007:1,348:1,375:2,383:1,316:1,403
             String area = dataScanner.next();
-            long pop1 = dataScanner.nextLong();
-            tortoisePopulation tortoisePopulation1 = new tortoisePopulation();
-           // System.out.println(tortoisePopulation1);
+            String populationSize1 = dataScanner.next();
+            long populationsize1Aslong = Long.parseLong(populationSize1);
+            String populationSize2 = dataScanner.next();
+            long populationsize2Aslong = Long.parseLong(populationSize2);
+            String populationSize3 = dataScanner.next();
+            long populationsize3Aslong = Long.parseLong(populationSize3);
+            String populationSize4 = dataScanner.next();
+            long populationsize4Aslong = Long.parseLong(populationSize4);
+            String populationSize5 = dataScanner.next();
+            long populationsize5Aslong = Long.parseLong(populationSize5);
+            String populationSize6 = dataScanner.next();
+            long populationsize6Aslong = Long.parseLong(populationSize6);
+            String populationSize7 = dataScanner.next();
+            long populationsize7Aslong = Long.parseLong(populationSize7);
+            String populationSize8 = dataScanner.next();
+            long populationsize8Aslong = Long.parseLong(populationSize8);
+            String populationSize9 = dataScanner.next();
+            long populationsize9Aslong = Long.parseLong(populationSize9);
+            System.out.println(populationsize1Aslong+" "+ populationsize2Aslong+" " +populationsize3Aslong+" " +populationsize4Aslong+" " +populationsize5Aslong+" " +populationsize6Aslong+" " +populationsize7Aslong+" " +populationsize8Aslong+" " +populationsize9Aslong);
+
+
+
         }
     }
 
