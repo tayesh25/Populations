@@ -1,5 +1,5 @@
 public class Animal extends Object {
-    private String area;
+    long populationSize;
     private long populationSize1;
     private long populationSize2;
     private long populationSize3;
@@ -9,30 +9,12 @@ public class Animal extends Object {
     private long populationSize7;
     private long populationSize8;
     private long populationSize9;
-
+}
 
 
 // pee pee
 
 
-    public void setYear(int year) {
-            this.year = year;
-        }
 
-        public void setPopulationSize(long populationSize) {
-            this.populationSize = populationSize;
-        }
-
-        public int getYear() {
-            return year;
-        }
-
-        public long getPopulationSize() {
-            return populationSize;
-        }
-
-
-
-    }
 
 

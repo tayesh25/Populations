@@ -106,7 +106,7 @@ public class tortoisePopulation extends Animal  {
 
         String titleLine = dataScanner.nextLine();
         Scanner titleScanner = new Scanner(titleLine);
-        titleScanner.useDelimiter(":");
+        titleScanner.useDelimiter(":|\n");
         //Tortoise Conservation Area Acr Area (km2):2004:2005:2007:2008:2009:2010:2011:2012:2013:2014
         // read years
         String titleData1 = titleScanner.next();
@@ -121,7 +121,7 @@ public class tortoisePopulation extends Animal  {
         long year9 = titleScanner.nextLong();
 
         while (dataScanner.hasNext()) {
-            dataScanner.useDelimiter(":");
+            dataScanner.useDelimiter(":|\n");
             //Colorado Desert:13,530:3,319:3,984:2,007:1,348:1,375:2,383:1,316:1,403
             String area = dataScanner.next();
             String populationSize1 = dataScanner.next();
@@ -142,7 +142,7 @@ public class tortoisePopulation extends Animal  {
             long populationsize8Aslong = Long.parseLong(populationSize8);
             String populationSize9 = dataScanner.next();
             long populationsize9Aslong = Long.parseLong(populationSize9);
-            System.out.println(populationsize1Aslong+" "+ populationsize2Aslong+" " +populationsize3Aslong+" " +populationsize4Aslong+" " +populationsize5Aslong+" " +populationsize6Aslong+" " +populationsize7Aslong+" " +populationsize8Aslong+" " +populationsize9Aslong);
+            System.out.println(area+" "+populationsize1Aslong+" "+ populationsize2Aslong+" " +populationsize3Aslong+" " +populationsize4Aslong+" " +populationsize5Aslong+" " +populationsize6Aslong+" " +populationsize7Aslong+" " +populationsize8Aslong+" " +populationsize9Aslong);
 
 
 
