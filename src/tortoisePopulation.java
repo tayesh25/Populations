@@ -1,12 +1,20 @@
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class tortoisePopulation extends Animal {
 
-    public tortoisePopulation(String area) {
+
+    private String area;
+    private int percentChange;
+
+
+    tortoisePopulation(String area, long populationSize, int percentChange) {
         this.area = area;
+        super.populationSize = populationSize;
+        this.percentChange = percentChange;
     }
+
+
 
     public String getArea() {
         return area;
@@ -16,9 +24,23 @@ public class tortoisePopulation extends Animal {
         this.area = area;
     }
 
-    private String area;
 
 
+
+
+
+
+
+
+
+    public String toString() {
+        return
+                "Area:'" + area + '\'' +
+
+                        ", PopulationSize: " + populationSize +
+                        ", PercentChange: " + percentChange +
+                        ' ';
+    }
     public static void readData() throws Exception {
         File dataFile = new File("src/tortoisePopulationDATA");
         Scanner dataScanner = new Scanner(dataFile);
