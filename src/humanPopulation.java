@@ -2,10 +2,6 @@ import java.io.File;
 import java.util.Scanner;
 
 public class humanPopulation extends Animal {
-    private String country;
-
-
-
     private int percentChange;
 
      humanPopulation(String country, long populationSize, int percentChange) {
@@ -58,15 +54,15 @@ public class humanPopulation extends Animal {
     }
 
     public static void readData() throws Exception {
-        File dataFile = new File("src/humanpopulationDATA");
+        File dataFile = new File("src/tortoisePopulationDATA");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\t");
         while (dataScanner.hasNext()) {
             //Afghanistan	// 2004 24,411,196	// 2012  32,716,214	+8,305,018	+34%
             String country = dataScanner.next();
 
-            Long populationsize = dataScanner.nextLong();
-            Integer populationchange = dataScanner.nextInt();
+            Long populationSize = dataScanner.nextLong();
+            Integer populationChange = dataScanner.nextInt();
 
 
 
