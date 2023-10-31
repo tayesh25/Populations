@@ -24,15 +24,6 @@ public class tortoisePopulation extends Animal {
         this.area = area;
     }
 
-
-
-
-
-
-
-
-
-
     public String toString() {
         return
                 "Area:'" + area + '\'' +
