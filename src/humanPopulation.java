@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class humanPopulation extends Animal {
     private int percentChange;
 
+    private String  country;
+
      humanPopulation(String country, long populationSize, int percentChange) {
         this.country = country;
         super.populationSize = populationSize;

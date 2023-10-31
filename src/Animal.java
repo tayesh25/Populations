@@ -1,37 +1,57 @@
 public class Animal extends Object {
-    private String area;
     private long populationSize1;
+
     private long populationSize2;
-    private long populationSize3;
-    private long populationSize4;
-    private long populationSize5;
-    private long populationSize6;
-    private long populationSize7;
-    private long populationSize8;
-    private long populationSize9;
 
+    private int year1;
 
+    private int year2;
 
-
-
-    public void setYear(int year) {
-            this.year = year;
-        }
-
-        public void setPopulationSize(long populationSize) {
-            this.populationSize = populationSize;
-        }
-
-        public int getYear() {
-            return year;
-        }
-
-        public long getPopulationSize() {
-            return populationSize;
-        }
-
-
-
+    public Animal(long populationSize1, long populationSize2, int year1, int year2) {
+        this.populationSize1 = populationSize1;
+        this.populationSize2 = populationSize2;
+        this.year1 = year1;
+        this.year2 = year2;
     }
+
+    public long getPopulationSize1() {
+        return populationSize1;
+    }
+
+    public void setPopulationSize1(long populationSize1) {
+        this.populationSize1 = populationSize1;
+    }
+
+    public long getPopulationSize2() {
+        return populationSize2;
+    }
+
+    public void setPopulationSize2(long populationSize2) {
+        this.populationSize2 = populationSize2;
+    }
+
+    public int getYear1() {
+        return year1;
+    }
+
+    public void setYear1(int year1) {
+        this.year1 = year1;
+    }
+
+    public int getYear2() {
+        return year2;
+    }
+
+    public void setYear2(int year2) {
+        this.year2 = year2;
+    }
+
+
+}
+
+
+
+
+
 
 
