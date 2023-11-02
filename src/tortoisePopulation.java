@@ -27,6 +27,13 @@ public class tortoisePopulation extends Animal  {
         this.populationSize9 = populationSize9;
     }
 
+    public tortoisePopulation(long populationsize1Aslong, long populationsize2Aslong, long populationsize3Aslong, long populationsize4Aslong) {
+        super();
+    }
+
+
+
+
     public long getPopulationSize1() {
         return populationSize1;
     }
@@ -142,7 +149,9 @@ public class tortoisePopulation extends Animal  {
             long populationsize8Aslong = Long.parseLong(populationSize8);
             String populationSize9 = dataScanner.next();
             long populationsize9Aslong = Long.parseLong(populationSize9);
-            System.out.println(area+" "+populationsize1Aslong+" "+ populationsize2Aslong+" " +populationsize3Aslong+" " +populationsize4Aslong+" " +populationsize5Aslong+" " +populationsize6Aslong+" " +populationsize7Aslong+" " +populationsize8Aslong+" " +populationsize9Aslong);
+
+            tortoisePopulation populationData = new tortoisePopulation();
+            System.out.println(populationData);
 
 
 
